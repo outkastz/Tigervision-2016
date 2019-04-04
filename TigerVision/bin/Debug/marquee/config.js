@@ -1,0 +1,1 @@
+$(function(){$('.marquee').marquee({showSpeed:1000, scrollSpeed: 10, yScroll:  'bottom', direction:  'left', pauseSpeed: 5000, duplicated: true});});

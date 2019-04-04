@@ -1,0 +1,159 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TigerVision
+</name>
+</assembly>
+<members>
+<member name="T:TigerVision.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.boosters">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.boosters1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.clickingspree">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.devitos">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.gr">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.jaxx">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.keetons">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.pregame">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.speedkings">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TigerVision.My.Resources.Resources.ugh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:TigerVision.userRequest.#ctor(System.String,System.String,System.String,System.String)">
+ <summary>
+ Set a new request with Twitter App parameters
+ </summary>
+ <param name="oauth_consumer_key_in"></param>
+ <param name="consumer_secret_in"></param>
+ <param name="oauth_token_in"></param>
+ <param name="oauth_token_secret_in"></param>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.setNounce">
+ <summary>
+ The oauth_nonce parameter is a unique token your application should generate for each unique request.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.setTimeStamp">
+ <summary>
+ The oauth_timestamp parameter indicates when the request was created. This value should be the number of seconds since the Unix epoch at the point the request is generated
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.percEncode(System.String)">
+ <summary>
+ Performs the Percent-encoding, also known as URL encoding
+ </summary>
+ <param name="StringToEncode"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.getSignature(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ The oauth_signature_method used by Twitter is HMAC-SHA1. This value should be used for any authorized request sent to Twitter's API.
+ </summary>
+ <param name="consumer_key_in"></param>
+ <param name="oauth_nonce_in"></param>
+ <param name="oauth_timestamp_in"></param>
+ <param name="oauth_token_in"></param>
+ <param name="consumer_secret_in"></param>
+ <param name="oauth_token_Secret_in"></param>
+ <param name="query">The string to search</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.HashString(System.String,System.String)">
+ <summary>
+ In cryptography, a keyed-hash message authentication code (HMAC) is a specific construction for calculating a message authentication code (MAC) involving a cryptographic hash function in combination with a secret cryptographic key. (from Wikipedia)
+ </summary>
+ <param name="StringToHash"></param>
+ <param name="Key"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.createAuthParam(System.String,System.String,System.String,System.String)">
+ <summary>
+ Create the concatenation of parameters for OAuth request.
+ </summary>
+ <param name="consumer_key_in"></param>
+ <param name="nonce_in"></param>
+ <param name="oauth_timestamp_in"></param>
+ <param name="oauth_token_in"></param>
+ <param name="query"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.reqParam(System.String)">
+ <summary>
+ format and set the main request parameters
+ </summary>
+ <param name="searchInput">Is the string to search</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:TigerVision.userRequest.makeRequest">
+ <summary>
+ Makes the main HTTP request.
+ </summary>
+ <param name="query"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
